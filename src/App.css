@@ -1,0 +1,82 @@
+.centerblock {
+  margin: auto;
+  width: 40%;
+  box-shadow: 5px 10px;
+  border: 3px solid rgb(240, 226, 226);
+  margin-top:7%;
+  background-image: url('./four.jpg') ;
+  }
+  
+  h1{
+    padding-top: 3%;
+    text-align: center;
+  }
+  
+  .unit{
+    text-align: center;
+    color: #000;
+    background:none;
+    margin-top: 4%;
+  }
+  
+  #unitsdropdown{
+    width: 80%;
+    text-align-last:center;
+    height: 50px !important;
+  }
+  
+  .lt{
+   font-weight: bold;
+  } 
+  
+  #firstUnit{
+    margin-left: 5%;
+    width: 30%;
+  }
+  
+  #secondUnit{
+    margin-left: 33%;
+    width: 30%;
+  }
+  #firsttext{
+    margin-left: 5%;
+    width: 29.5%;
+  }
+  #secondtext{
+    margin-left: 33%;
+    width: 29%;
+  }
+  
+  #convert{
+    position: absolute;
+    margin-left: 16%;
+    top: 58%;
+  }
+
+ 
+  .firstSelector{
+    margin-top: 8%;
+    margin-left: 10%;
+    
+  }
+  .firstNext{
+    margin-top: 8%;
+  }
+  .button{
+    width: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 41%;
+  }
+  
+  body{
+      background-image:url('../src/second.jpg') ;
+      background-repeat:no-repeat ;
+      background-size:100%;
+  
+  }
+  
+  #main{
+    background-image: url('../src/first.webp') ;
+  }
+  
