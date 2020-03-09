@@ -5,7 +5,7 @@ import FirstDropdown from '../src/first'
 export class main extends Component {
     render() {
         return (
-         <div class="centerblock">
+         <div class="border">
                 <FirstDropdown />
               
             </div>

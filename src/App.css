@@ -1,82 +1,148 @@
-.centerblock {
+.App {
+  text-align: center;
+}
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: blanchedalmond;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+#select {
+  width: 100px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.border {
   margin: auto;
   width: 40%;
-  box-shadow: 5px 10px;
+  box-shadow: 6px 10px gray;
   border: 3px solid rgb(240, 226, 226);
-  margin-top:7%;
-  background-image: url('./four.jpg') ;
-  }
-  
-  h1{
-    padding-top: 3%;
-    text-align: center;
-  }
-  
-  .unit{
-    text-align: center;
-    color: #000;
-    background:none;
-    margin-top: 4%;
-  }
-  
-  #unitsdropdown{
-    width: 80%;
-    text-align-last:center;
-    height: 50px !important;
-  }
-  
-  .lt{
-   font-weight: bold;
-  } 
-  
-  #firstUnit{
-    margin-left: 5%;
-    width: 30%;
-  }
-  
-  #secondUnit{
-    margin-left: 33%;
-    width: 30%;
-  }
-  #firsttext{
-    margin-left: 5%;
-    width: 29.5%;
-  }
-  #secondtext{
-    margin-left: 33%;
-    width: 29%;
-  }
-  
-  #convert{
-    position: absolute;
-    margin-left: 16%;
-    top: 58%;
-  }
+  margin-top: 7%;
+  background-image: url("./d.jpeg");
 
- 
-  .firstSelector{
-    margin-top: 8%;
-    margin-left: 10%;
-    
-  }
-  .firstNext{
-    margin-top: 8%;
-  }
-  .button{
-    width: 20%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    margin-left: 41%;
-  }
-  
-  body{
-      background-image:url('../src/second.jpg') ;
-      background-repeat:no-repeat ;
-      background-size:100%;
-  
-  }
-  
-  #main{
-    background-image: url('../src/first.webp') ;
-  }
-  
+  border-radius: 10%;
+}
+
+h1 {
+  padding-top: 3%;
+  font-size: 250%;
+  text-align: center;
+  color: darkolivegreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px gray;
+}
+
+.unit {
+  text-align: center;
+  color: #000;
+  background: none;
+  margin-top: 4%;
+}
+
+#unitsdropdown {
+  width: 80%;
+  text-align-last: center;
+  height: 50px !important;
+}
+
+.lt {
+  font-weight: bold;
+}
+
+#firstUnit {
+  margin-left: 5%;
+  width: 29.2%;
+  box-shadow: 3px 3px black;
+  border-color: black;
+}
+
+#secondUnit {
+  margin-left: 33%;
+  width: 29%;
+  box-shadow: 3px 3px black;
+  border-color: black;
+}
+#firsttext {
+  margin-left: 5%;
+  width: 28.4%;
+  box-shadow: 3px 3px black;
+  border-color: black;
+}
+#secondtext {
+  margin-left: 33%;
+  width: 28.2%;
+  box-shadow: 3px 3px black;
+  border-color: black;
+}
+
+#convert {
+  position: absolute;
+  margin-left: 16%;
+  top: 58%;
+}
+
+.firstSelector {
+  margin-top: 8%;
+  margin-left: 10%;
+  box-shadow: 2px 3px black;
+  border-radius: 10%;
+}
+.first {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonCss {
+  width: 20%;
+  height: 30%;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 10% 40% 5% 40%;
+  box-shadow: 2px 3px gray;
+  font-size: 40%;
+}
+.buttonStyle {
+  width: 100%;
+  text-overflow: clip;
+  text-size-adjust: 2%;
+}
+
+body {
+  background-image: url("../src/second.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#main {
+  background-image: url("../src/first.webp");
+}

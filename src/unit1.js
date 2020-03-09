@@ -1,26 +1,31 @@
 import React, { Component } from "react";
 import "./App.css";
-import configuration from "./configuration/configuration";
+import { configuration } from "./configuration/configuration";
 
 class unit1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      unit1: this.props.value[0],
-      unit2: this.props.value[0],
+      unit1: " ",
+      unit2: " ",
       text1: 0,
       text2: 0
     };
   }
 
-  unit1Value = event => {
-    this.setState({ unit1: event.target.value });
-
-    console.log("fvghbjnmk", unit1);
+  updateUnit(value) {
+    this.setState({
+      unit1: value,
+      unit2: value
+    });
+  }
+  
+  unit1Value = async event => {
+    await this.setState({ unit1: event.target.value });
   };
 
-  unit2Value = event => {
-    this.setState({ unit2: event.target.value });
+  unit2Value = async event => {
+    await this.setState({ unit2: event.target.value });
   };
 
   text1Value = async event => {
@@ -29,17 +34,12 @@ class unit1 extends Component {
     });
   };
 
-
   getconversion = event => {
-    this.setState{
-      text1:
-    }
     configuration(this.state.text1, this.state.unit1, this.state.unit2).then(
       result => {
         console.log("response ", result.data.convertedValue);
         this.setState({
           text2: result.data.convertedValue
-          
         });
       }
     );
@@ -52,9 +52,10 @@ class unit1 extends Component {
 
     return (
       <div>
-        <div className="firstNext">
+        <div className="first">
           <input
             id="firsttext"
+            type="number"
             placeholder="unit"
             value={this.state.text1}
             onChange={this.text1Value}
@@ -63,8 +64,8 @@ class unit1 extends Component {
           <input
             id="secondtext"
             placeholder="unit"
+            type="number"
             value={this.state.text2}
-            // onChange={this.text2Value}
           ></input>
         </div>
 
@@ -88,8 +89,12 @@ class unit1 extends Component {
           </select>
         </div>
 
-        <div className="button">
-          <button type="button" onClick={this.getconversion}>
+        <div className="buttonCss">
+          <button
+            type="button"
+            className="buttonStyle"
+            onClick={this.getconversion}
+          >
             Convert To
           </button>
         </div>
